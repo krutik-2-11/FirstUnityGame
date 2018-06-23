@@ -6,6 +6,12 @@ public class GameManager : MonoBehaviour {
 
 	public bool isGameOver = false;
 	public float restartDelay = 1f;
+	public GameObject completeLevelUI;
+	public void CompleteLevel()
+	{
+		completeLevelUI.SetActive (true);
+		Debug.Log ("Level Complete");
+	}
 	public void EndGame()
 	{
 		if (isGameOver == false) 
